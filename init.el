@@ -160,6 +160,8 @@
   (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
   (add-hook 'elpy-mode-hook 'flycheck-mode))
 
+(setq flycheck-check-syntax-automatically '(save mode-enable))
+
 ;;****************************************************************
 ;; User-Defined .emacs ends here
 ;;****************************************************************
