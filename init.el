@@ -61,10 +61,11 @@
 ;; Basic Customization
 ;; ===================================
 (setq make-backup-files nil)        ;; Prevent backup of name.ext (name.ext~)
+(setq x-select-enable-clipboard nil);; system clipboard
 (setq inhibit-startup-message t)    ;; Hide the startup message
 (setq visible-bell 1)               ;; Disables system sound (beep) 
 (setq scroll-step 1)                ;; Smooth keyboard scrolling
-(load-theme 'material t)            ;; Load material theme
+(load-theme 'material-light t)            ;; Load material theme
 (global-linum-mode t)               ;; Enable line numbers globally
 ;;(setq org-pretty-entities t)        ;; Get LaTeX font rendering
 (setq-default tab-width 4)          ;; Tab width set
@@ -124,7 +125,7 @@
     (kbd "RET") 'easy-hugo-preview)
   (define-key global-map (kbd "C-c C-e") 'easy/hugo))
 
-(setq easy-hugo-basedir "~/hugo-helionotes/")
+(setq easy-hugo-basedir "~/Yandex.Disk/websites/academic-site/")
 (setq easy-hugo-postdir "content/post")
 (setq easy-hugo-url "http://localhost:1313/")
 (setq easy-hugo-previewtime "20")
