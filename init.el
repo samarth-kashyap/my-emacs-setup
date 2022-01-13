@@ -61,7 +61,8 @@
 ;; Basic Customization
 ;; ===================================
 (setq make-backup-files nil)        ;; Prevent backup of name.ext (name.ext~)
-(setq x-select-enable-clipboard nil);; system clipboard
+;;(setq x-select-enable-clipboard nil)  ;; system clipboard
+(setq x-select-enable-clipboard t)  ;; system clipboard
 (setq inhibit-startup-message t)    ;; Hide the startup message
 (setq visible-bell 1)               ;; Disables system sound (beep) 
 (setq scroll-step 1)                ;; Smooth keyboard scrolling
@@ -81,6 +82,7 @@
 ;;(face-attribute 'bold :weight)
 ;;(face-attribute 'italic :slant)
 ;;(set-face-attribute :weight 'bold :slant 'italic)
+(xclip-mode 1)
 
 ;;-----------------------------------
 ;; Markdown - mode configuration here
@@ -174,7 +176,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(vimish-fold cuda-mode yasnippet-snippets auto-complete popup-edit-menu markdown-mode ox-hugo easy-hugo material-theme magit-popup htmlize gnu-elpa-keyring-update flycheck evil elpy better-defaults async))
+   '(xclip vimish-fold cuda-mode yasnippet-snippets auto-complete popup-edit-menu markdown-mode ox-hugo easy-hugo material-theme magit-popup htmlize gnu-elpa-keyring-update flycheck evil elpy better-defaults async))
  '(xterm-mouse-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
